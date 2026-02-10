@@ -5,9 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Thota Hemanth | Cybersecurity & Java Developer</title>
 
-<meta name="description" content="Cybersecurity & Java Developer portfolio of Thota Hemanth featuring real-world security projects, skills, and certifications.">
-<meta name="author" content="Thota Hemanth">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -19,148 +16,76 @@
 --text:#f8fafc;
 --gray:#94a3b8;
 }
-
 *{margin:0;padding:0;box-sizing:border-box}
-body{
-font-family:'Inter',sans-serif;
-background:var(--bg);
-color:var(--text);
-line-height:1.6;
-scroll-behavior:smooth;
-}
-h1,h2,h3{font-family:'Poppins',sans-serif}
+body{font-family:Inter,sans-serif;background:var(--bg);color:var(--text)}
 .container{width:90%;max-width:1200px;margin:auto}
 section{padding:100px 0}
+h1,h2,h3{font-family:Poppins}
 
-/* HEADER */
-header{
-position:fixed;
-top:0;width:100%;
-background:rgba(2,6,23,.95);
-z-index:1000;padding:20px 0;
-border-bottom:1px solid rgba(56,189,248,.1)
-}
+header{position:fixed;top:0;width:100%;background:#020617f2;padding:20px 0;z-index:10}
 nav{display:flex;justify-content:space-between;align-items:center}
-.logo{color:var(--primary);font-size:24px;font-weight:700;text-decoration:none}
-.nav-links{display:flex;gap:30px;list-style:none}
-.nav-links a{color:var(--text);text-decoration:none}
+.logo{color:var(--primary);font-weight:700;font-size:24px;text-decoration:none}
+.nav-links{list-style:none;display:flex;gap:25px}
+.nav-links a{color:white;text-decoration:none}
 
-/* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;padding-top:120px}
-.hero h1{
-font-size:3.5rem;
-background:linear-gradient(to right,#38bdf8,#818cf8);
--webkit-background-clip:text;
-color:transparent
-}
+.hero h1{font-size:3.5rem;background:linear-gradient(to right,#38bdf8,#818cf8);-webkit-background-clip:text;color:transparent}
 .hero h2{color:var(--primary);margin:15px 0}
-.hero p{color:var(--gray);max-width:700px}
-.btn{
-display:inline-flex;gap:10px;align-items:center;
-padding:14px 28px;border-radius:8px;
-text-decoration:none;font-weight:500;transition:.3s
-}
+.hero p{color:var(--gray);max-width:650px}
+
+.btn{padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:500;display:inline-flex;gap:10px}
 .btn-primary{background:linear-gradient(to right,#38bdf8,#0ea5e9);color:white}
 .btn-secondary{border:2px solid var(--primary);color:var(--primary)}
-.btn:hover{transform:translateY(-4px)}
 
-/* TITLES */
 .section-title{text-align:center;margin-bottom:60px}
 .section-title h2{font-size:2.5rem}
 
-/* SKILLS */
-.skills-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px
-}
-.skill-card{
-background:var(--card);
-padding:25px;border-radius:12px;
-border:1px solid rgba(56,189,248,.1)
-}
-.skill-bar{
-height:8px;background:rgba(56,189,248,.2);
-border-radius:4px;overflow:hidden;margin:10px 0
-}
-.skill-progress{
-height:100%;
-background:linear-gradient(to right,#38bdf8,#818cf8);
-animation:fill 2s ease
-}
-@keyframes fill{from{width:0}}
+.skills-grid,.projects-grid,.cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
 
-/* PROJECTS */
-.projects-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:30px
+.card,.project-card,.cert-card{
+background:var(--card);padding:25px;border-radius:12px;
+border:1px solid rgba(56,189,248,.15)
 }
-.project-card{
-background:var(--card);
-border-radius:12px;overflow:hidden;
-border:1px solid rgba(56,189,248,.1);
-transition:.3s;position:relative
-}
-.project-card:hover{transform:translateY(-8px);border-color:var(--primary)}
-.project-icon{
-height:200px;
-background:linear-gradient(135deg,#38bdf8,#818cf8);
-display:flex;align-items:center;justify-content:center;
-font-size:70px;color:white
-}
-.project-content{padding:25px}
+
+.skill-bar{height:8px;background:#38bdf833;border-radius:4px;overflow:hidden;margin:10px 0}
+.skill-progress{height:100%;background:linear-gradient(to right,#38bdf8,#818cf8)}
+
+.project-icon{height:180px;background:linear-gradient(135deg,#38bdf8,#818cf8);
+display:flex;align-items:center;justify-content:center;font-size:70px;color:white;border-radius:12px 12px 0 0}
+
 .tags{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0}
-.tag{
-background:rgba(56,189,248,.15);
-color:var(--primary);
-padding:5px 12px;border-radius:20px;font-size:14px
-}
-.featured{
-position:absolute;top:15px;right:15px;
-background:#22c55e;color:black;
-padding:6px 14px;border-radius:20px;
-font-size:13px;font-weight:600
-}
+.tag{background:#38bdf826;color:#38bdf8;padding:5px 12px;border-radius:20px;font-size:14px}
 
-/* CERTIFICATES */
-.cert-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px
-}
-.cert-card{
-background:var(--card);
-padding:25px;border-radius:12px;
-border:1px solid rgba(56,189,248,.1)
-}
+.featured{background:#22c55e;color:black;padding:6px 14px;border-radius:20px;font-size:13px;
+position:absolute;top:15px;right:15px;font-weight:600}
 
-/* FOOTER */
-footer{
-padding:60px 0;text-align:center;
-border-top:1px solid rgba(255,255,255,.1)
-}
-
-/* ANIMATION */
 .fade{opacity:0;transform:translateY(30px);transition:.8s}
 .fade.show{opacity:1;transform:translateY(0)}
 
-@media(max-width:768px){
-.hero h1{font-size:2.5rem}
-}
+footer{text-align:center;padding:60px 0;border-top:1px solid #ffffff15}
+
+/* BACKGROUND */
+.particles{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.particle{position:absolute;width:3px;height:3px;background:#38bdf8;border-radius:50%;
+animation:float 12s linear infinite;opacity:.6}
+@keyframes float{from{transform:translateY(100vh)}to{transform:translateY(-10vh)}}
 </style>
 </head>
 
 <body>
 
+<div class="particles" id="particles"></div>
+
 <header>
 <div class="container">
 <nav>
-<a class="logo" href="#">Thota Hemanth</a>
+<a class="logo">Thota Hemanth</a>
 <ul class="nav-links">
 <li><a href="#skills">Skills</a></li>
 <li><a href="#projects">Projects</a></li>
+<li><a href="#coding">Coding</a></li>
 <li><a href="#certs">Certificates</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 </div>
@@ -170,10 +95,10 @@ border-top:1px solid rgba(255,255,255,.1)
 <div class="container">
 <h1>Thota Hemanth</h1>
 <h2>Cybersecurity & Java Developer</h2>
-<p>Cybersecurity-focused Computer Science student skilled in Java, Spring Boot and secure application design.</p>
+<p>Cybersecurity-focused Computer Science student skilled in Java, Spring Boot, and secure system design.</p>
 <div style="margin-top:30px;display:flex;gap:20px;flex-wrap:wrap">
-<a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i>View Projects</a>
-<a href="resume.pdf" class="btn btn-secondary" download><i class="fas fa-file"></i>Resume</a>
+<a href="#projects" class="btn btn-primary">View Projects</a>
+<a href="resume.pdf" class="btn btn-secondary" download>Download Resume</a>
 </div>
 </div>
 </section>
@@ -182,21 +107,15 @@ border-top:1px solid rgba(255,255,255,.1)
 <div class="container">
 <div class="section-title"><h2>Skills</h2></div>
 <div class="skills-grid fade">
-<div class="skill-card">
-<h3>Java</h3>
-<div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div>
-<h3>Python</h3>
-<div class="skill-bar"><div class="skill-progress" style="width:70%"></div></div>
-<h3>Spring Boot</h3>
-<div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div>
+<div class="card">
+Java<div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div>
+Python<div class="skill-bar"><div class="skill-progress" style="width:70%"></div></div>
+Spring Boot<div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div>
 </div>
-<div class="skill-card">
-<h3>Cybersecurity</h3>
-<div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div>
-<h3>HTML / CSS</h3>
-<div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div>
-<h3>JavaScript</h3>
-<div class="skill-bar"><div class="skill-progress" style="width:65%"></div></div>
+<div class="card">
+Cybersecurity<div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div>
+HTML/CSS<div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div>
+JavaScript<div class="skill-bar"><div class="skill-progress" style="width:65%"></div></div>
 </div>
 </div>
 </div>
@@ -205,46 +124,42 @@ border-top:1px solid rgba(255,255,255,.1)
 <section id="projects">
 <div class="container">
 <div class="section-title"><h2>Projects</h2></div>
-
 <div class="projects-grid fade">
 
 <div class="project-card">
 <div class="project-icon"><i class="fas fa-eye"></i></div>
-<div class="project-content">
-<h3>Object Detection Web Application</h3>
-<div class="tags">
-<span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Flask</span>
-</div>
-<p>Detects real-world objects in images/videos using deep learning and computer vision.</p>
+<h3>Object Detection Web App</h3>
+<div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Flask</span></div>
+<p>Real-time object detection using deep learning.</p>
 <a class="btn btn-primary" target="_blank"
-href="https://github.com/hemanthnaidu0508-cmd/Object-detection-web-application">
-<i class="fab fa-github"></i>GitHub
-</a>
-</div>
+href="https://github.com/hemanthnaidu0508-cmd/Object-detection-web-application">GitHub</a>
 </div>
 
-<div class="project-card">
+<div class="project-card" style="position:relative">
 <div class="featured">FEATURED</div>
 <div class="project-icon"><i class="fas fa-shield-virus"></i></div>
-<div class="project-content">
 <h3>Phishing URL Detection Tool</h3>
-<div class="tags">
-<span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Cybersecurity</span>
-</div>
-<p>Detects phishing URLs using domain analysis, keyword checks and risk scoring.</p>
+<div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Cybersecurity</span></div>
+<p>Detects phishing URLs using domain analysis and risk scoring.</p>
 <div style="display:flex;gap:15px;flex-wrap:wrap">
 <a class="btn btn-primary" target="_blank"
-href="https://github.com/hemanthnaidu0508-cmd/phishing-url-detector">
-<i class="fab fa-github"></i>Source
-</a>
+href="https://github.com/hemanthnaidu0508-cmd/phishing-url-detector">Source</a>
 <a class="btn btn-secondary" target="_blank"
-href="https://phishing-url-detector-1-cdbp.onrender.com">
-<i class="fas fa-globe"></i>Live
-</a>
-</div>
+href="https://phishing-url-detector-1-cdbp.onrender.com">Live</a>
 </div>
 </div>
 
+</div>
+</div>
+</section>
+
+<section id="coding">
+<div class="container">
+<div class="section-title"><h2>Coding Platforms</h2></div>
+<div class="cert-grid fade">
+<div class="cert-card">GitHub – hemanthnaidu0508-cmd</div>
+<div class="cert-card">LeetCode – 237Y1A6218</div>
+<div class="cert-card">CodeChef – hemanththota</div>
 </div>
 </div>
 </section>
@@ -253,10 +168,23 @@ href="https://phishing-url-detector-1-cdbp.onrender.com">
 <div class="container">
 <div class="section-title"><h2>Certificates</h2></div>
 <div class="cert-grid fade">
-<div class="cert-card">Python – HackerRank</div>
-<div class="cert-card">Java Programming – in28Minutes</div>
-<div class="cert-card">Network Security Associate – Fortinet</div>
-<div class="cert-card">Web Development with AI – Internshala</div>
+<div class="cert-card">Python – HackerRank | ID: ID2BC2A0F7CCB0</div>
+<div class="cert-card">Java – in28Minutes (59 hrs)</div>
+<div class="cert-card">Fortinet NSA | ID: 774417a44d2d39ece1139d425c3fce76</div>
+<div class="cert-card">Deep Learning Internship | No: 000823/24-25</div>
+<div class="cert-card">Web Dev AI – Internshala | No: fu320imcr24</div>
+<div class="cert-card">DSA – Internshala | No: dc2u6jb2duo</div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<div class="section-title"><h2>Contact Me</h2></div>
+<div class="skills-grid fade">
+<div class="card">Email: hemanthnaidu0508@gmail.com</div>
+<div class="card">Phone: +91 7981410064</div>
+<div class="card">LinkedIn: Thota Hemanth</div>
 </div>
 </div>
 </section>
@@ -264,16 +192,24 @@ href="https://phishing-url-detector-1-cdbp.onrender.com">
 <footer>
 <h2>Thota Hemanth</h2>
 <p style="color:var(--gray)">Cybersecurity & Java Developer</p>
-<p style="margin-top:20px;color:var(--gray)">© 2024 All rights reserved</p>
+<p style="color:var(--gray)">© 2024 All Rights Reserved</p>
 </footer>
 
 <script>
-const f=document.querySelectorAll('.fade');
-const show=()=>f.forEach(e=>{
-if(e.getBoundingClientRect().top<window.innerHeight-100)
-e.classList.add('show')
+const fades=document.querySelectorAll('.fade');
+const show=()=>fades.forEach(el=>{
+if(el.getBoundingClientRect().top<window.innerHeight-100)el.classList.add('show');
 });
 window.addEventListener('scroll',show);show();
+
+const p=document.getElementById("particles");
+for(let i=0;i<60;i++){
+let d=document.createElement("div");
+d.className="particle";
+d.style.left=Math.random()*100+"vw";
+d.style.animationDuration=8+Math.random()*10+"s";
+p.appendChild(d);
+}
 </script>
 
 </body>
