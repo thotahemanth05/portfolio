@@ -266,21 +266,37 @@
         }
 
         /* PART 7: PROJECTS SECTION */
+        .projects {
+    position: relative;
+    background: transparent;
+    padding-bottom: 120px; /* creates visual end */
+}
+
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 30px;
         }
 
-        .project-card {
+ .project-card {
     background: rgba(30, 41, 59, 0.6);
     border-radius: 12px;
-    overflow: visible;
+    overflow: visible; /* IMPORTANT */
     border: 1px solid rgba(56, 189, 248, 0.1);
     transition: transform 0.3s;
 }
+
 .project-content {
     min-height: 280px;
+}
+.projects::after {
+    content: "";
+    display: block;
+    margin: 80px auto 0;
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    border-radius: 2px;
 }
 
 
@@ -670,7 +686,8 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects" style="position: relative; z-index: 1;">
+
         <div class="container">
             <div class="section-title">
                 <h2>My Projects</h2>
@@ -737,7 +754,8 @@
     </section>
 
     <!-- Certificates Section -->
-    <section id="certificates" class="certificates">
+    <section id="certificates" class="certificates" style="position: relative; z-index: 2;">
+
         <div class="container">
             <div class="section-title">
                 <h2>My Certificates</h2>
@@ -1224,4 +1242,5 @@ ${message}
 </body>
 
 </html>
+
 
